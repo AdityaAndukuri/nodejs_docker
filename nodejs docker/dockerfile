@@ -1,0 +1,7 @@
+FROM node:10
+WORKDIR /dir
+COPY . /dir
+RUN npm install
+EXPOSE 8082
+ENTRYPOINT ["node"]
+CMD ["server.js"]
